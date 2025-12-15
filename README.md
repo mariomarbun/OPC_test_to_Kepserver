@@ -78,13 +78,9 @@ openssl req -new -x509 \
   -config pki/openssl.cnf
 ```
 
-### Step 4: Trust Certificate in KEPServerEX
+### Step 4: Trust Server Certificate
 
-Copy the `client_cert.der` file to the following folder, then restart KEPServerEX:
-
-```
-C:\ProgramData\KEPServerEX\OPC UA\pki\trusted\certs
-```
+Import the certificate from KEPServerEX (Server), then place it in the `pki/trusted/certs` folder.
 
 ### Step 5: Python OPC UA Client Code
 
