@@ -60,6 +60,15 @@ extendedKeyUsage = clientAuth
 URI.1 = urn:OPCUA:PythonClient
 ```
 
+> **💡 Customization Note:**  
+> You can customize the following fields according to your needs:
+> - `CN` - Common Name (e.g., "Python OPC UA Client")
+> - `OU` - Organizational Unit (e.g., "Dev", "Engineering")
+> - `O` - Organization (e.g., "AlfaSolution", "YourCompany")
+> - `L` - Location/City (e.g., "City", "Jakarta")
+> - `C` - Country (e.g., "ID", "US")
+> - `URI.1` - Application URI (e.g., "urn:OPCUA:PythonClient") - should be customizable but not yet tested
+
 ### Step 2: Generate Private Key
 
 ```bash
